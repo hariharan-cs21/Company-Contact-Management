@@ -1,0 +1,22 @@
+{
+	"name": "company-contact-management",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"prepare": "husky install",
+		"check": "npx @biomejs/biome check",
+		"format": "npx @biomejs/biome format --write && npx @biomejs/biome lint --write"
+	},
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"biome": "^0.3.3",
+		"husky": "^8.0.3",
+		"lint-staged": "^15.3.0"
+	},
+	"lint-staged": {
+		"*.{js,jsx,ts,tsx}": "biome format check"
+	}
+}
